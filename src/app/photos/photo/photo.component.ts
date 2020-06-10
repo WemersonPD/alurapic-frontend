@@ -1,0 +1,18 @@
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-photo',
+  templateUrl: './photo.component.html',
+  styleUrls: ['./photo.component.scss']
+})
+export class PhotoComponent implements OnInit {
+  @Input() title = ''
+  @Input() url = ''
+  @Input() description = 'Teste'
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
